@@ -1,0 +1,543 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+	background: #fff;
+	font-family: "Open Sans";
+}
+a{
+	text-decoration: none !important;
+}
+
+.preloader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	z-index: 999;
+	transition: 1s all;
+	opacity: 1;
+	visibility: visible;
+}
+
+.loader{
+		height: 75px;
+		width: 75px;
+	    border: 5px solid silver ;
+		border-radius: 50%;
+		border-top-color: #ff3f40;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50% , -50%);
+		animation: 2s spin infinite cubic-bezier(.92,.07,.25,1.04);
+	}
+
+.done{
+	opacity: 1;
+	visibility: hidden;
+}
+
+
+@keyframes spin{
+	from{
+		transform: translate(-50% , -50%) rotate(0deg)
+	}
+	to{
+		transform: translate(-50% , -50%) rotate(360deg)
+	}
+}
+
+.first-block{
+	background: #f6f2f2;
+	padding-top: 30px;
+}
+.first-block a{
+	color: white;	
+}
+.first-block a:hover{
+	color: white;	
+}
+.navbar{
+	height: 90px;
+	padding-top: 30px;
+}
+
+.menu{
+	height: 90px;
+	}
+                            /*Навбар на бутстрапе , на FLEXbox .Задал бекграунды и размеры блоков .Задал ховер для элементов меню */
+.Menu-item {
+	width: 110px;
+	text-align: center;
+	padding-top: 35px;
+	font-size: 14px;
+	font-weight: bold;
+	font-weight: 550;
+}
+
+.Menu-item:hover{
+	background:#ff3f40; 
+}
+
+.navbar div.Menu-item-first{
+	background: #ff3f40;
+}
+
+.first-block-content{
+	margin-top: 150px;
+	
+}
+
+.info-block{
+	height: 360px;
+	margin-bottom: 110px;
+}
+
+.info-block h2{
+	font-size: 60px;
+	font-weight: bold;
+}
+.info-block p{
+	font-size: 16px;
+	color: #6f6d6d;
+	margin-top:15px;
+}
+
+                            /*Тут я задал отступы и изменил тест. Сделал кнопку */
+
+.button-contact{
+	border: none;
+	background: #ff3f40;
+	width: 227px;
+	height: 55px;
+	border-radius: 3px;
+	margin-top: 50px;
+	color: white;
+	font-size: 18px;
+	outline:none;
+}
+
+.button-contact:hover{
+	background: none;
+	color:#ff3f40;
+	border: 1px solid #ff3f40;
+	outline:none;
+}
+
+.second-block-content{
+	margin-top:115px;
+	margin-bottom: 111px;
+}
+
+.second-block-content div.cont{
+	width: 290px;
+	margin: 10px;
+}
+
+
+.info-block-second h2{
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.info-block-second p{
+	font-size: 16px;
+	margin-top:30px;
+}
+                             /*Тут я задал отступы и изменил тест. Сделал кнопку */
+.button-learn{
+	border: 1px solid #ff3f40 ;
+	background: none;
+	width: 227px;
+	height: 55px;
+	border-radius: 3px;
+	margin-top: 50px;
+	color: #ff3f40 ;
+	font-size: 18px;
+	margin-bottom: 100px;
+	outline:none;
+}
+
+.button-learn:hover{
+	background: #ff3f40 ;
+	color:white;
+	border: 1px solid #ff3f40;
+	outline:none;
+}
+
+.Table-first-stick img{
+	width: 41px;
+	height: 41px;
+}
+
+.table-blocks h6{
+	margin-top: 20px;
+	font-size: 24px;
+}
+                               /*Ничего особеного , в основном использовал бутстрап  */
+.table-blocks p {
+	font-size: 16px;
+	color: #6f6d6d;
+}
+
+
+
+.Table-second-stick img{
+	margin-top: 55px;
+}
+
+
+.White-hr{
+	margin-bottom: 105px;  ./* Сделал нужную <hr> */
+}
+
+.third-block{
+	
+}
+
+.third-block-conten{
+	
+}
+
+.info-block-third{
+	text-align: center;
+}
+
+.info-block-third h2{
+	font-size: 42px;
+	font-weight: bold;
+}
+
+.info-block-third p{
+	font-size: 16px;
+	color: #6f6d6d;
+	margin-top: 20px;
+}
+                                     /*Тут ток изменения текста , отступы , выравнивание . Сделал красную <hr>*/
+.red-hr{
+	width: 130px;
+	border: 1px solid #ff3f40;
+}
+
+.some-itms{
+	margin-bottom: 10px;
+}
+
+.some-itms p{
+	margin: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+.some-itms a{
+	color: black ;
+}
+
+.some-itms a:hover{
+	color: #ff3f40;
+}
+
+.demo-itms{
+	height: 290px;
+}
+
+.gold-block {
+	width: 95%;
+	height: 95%;
+	background: #f5f0dd;
+	margin: auto;
+	margin-top: 3%;
+} 
+                              /*Тут я задал блокам для демонстрации ховер еффект . */
+
+.hover-effect{
+	margin: 2.5%;
+	width: 95%;
+	height: 95%;
+	opacity:0;
+	background: #000;
+	position: absolute;
+	transition: 1s;
+	color: white;
+	text-align: center;
+	line-height: 275px;
+}
+
+.hover-effect:hover{
+	opacity: 0.5;
+}
+
+
+.fourth-block{
+	margin-top: 140px;
+	margin-bottom: 110px;
+}
+
+
+
+
+
+.info-block-fourth h2{
+	font-size: 42px;
+	font-weight: bold;
+}
+
+
+
+.info-block-fourth p{
+	font-size: 16px;
+	color: #6f6d6d;
+	margin-left: 15px;
+	margin-bottom: 65px;
+	margin-top: 20px;
+}
+
+.red-hr-second{
+	border: 1px solid #ff3f40;
+}
+
+.left-block{
+	height: 410px;
+	background: #f5f0dd;
+	margin-top: 70px;
+	
+}
+
+.hover-effect-left-block{
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	background: #000;
+	position: absolute;
+	transition: 1s;
+	margin-left: -15px;
+}
+
+.hover-effect-left-block:hover{
+	opacity: 0.5;
+}
+
+
+.right-block {
+	height: 410px;
+	margin-top: 70px;
+	position: relative;
+}
+
+.right-block h4{
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+
+.right-block p{
+	font-size: 16px;
+	color: #6f6d6d;
+	margin-left: 30px;
+}
+
+
+.social-network{
+	margin-top: 30px;
+}
+
+.social-network a{
+	color: black;
+	font-size: 18px;
+	font-style: italic;
+}
+
+
+.small-blocks{
+	position: absolute;
+	bottom: 0;
+	left: 20px;
+}
+
+.small-gold-block{
+	margin: 5px;
+	width: 160px;
+	height: 160px;
+	background: #f5f0dd;
+	margin-bottom: 0;
+	color: red;
+	position: relative;
+}
+
+
+
+.hover-effect-second{
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	background: #000;
+	position: absolute;
+	transition: 1s;
+}
+
+.hover-effect-second:hover{
+	opacity: 0.5;
+}
+
+.fifth-block{
+	background: #f5f0dd;
+	padding-top:  140px;
+}
+
+.fifth-block h2{
+	font-size: 42px;
+	font-weight: 500;
+	color: #fdfcf8;
+	text-align: center;
+}
+
+.fifth-block p{
+	font-size: 16px;
+	color: #fdfcf8;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.sub-block{
+	margin-top: 30px;
+	margin-bottom: 135px;
+}
+                            /*Тут я задал отступы и изменил тест . Задал стили для кнопки и поля ввода эмайла */
+
+.find-input{
+	border:none;
+	height: 80px;
+	border-radius: 3px;
+	outline:none;
+	margin-left: 15%;
+}
+
+
+
+.button-sub{
+	border: none;
+	background: #ff3f40;
+	width: 215px;
+	height: 80px;
+	border-radius: 3px;
+	color: white;
+	font-size: 18px;
+	font-weight:bold;
+	outline:none;
+	margin: 2%;
+}
+
+
+.button-sub:hover{
+	background:white  ;
+	color:#ff3f40;
+	border: 1px solid #ff3f40;
+	outline:none;
+}
+.sixth-block{
+	margin-bottom: 110px;
+}
+
+.info-block-sixth{
+	margin-top: 105px;
+}
+
+.info-block-sixth h2{
+	font-size: 42px;
+	font-weight: bold;
+	margin-left: 15px;
+}
+
+
+.info-block-sixth p{
+	font-size: 16px;
+	color: #6f6d6d;
+	margin-left: 15px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+
+form{
+	margin-top: 60px;
+	position: relative;
+}
+
+
+
+.form-input{
+	border:none;
+	width: 45%;
+	height: 70px;
+	border-radius: 7px;
+	outline:none;
+	background: #e5e5e5;
+	padding-left: 40px !important; 
+	padding-right: 40px !important; 
+}
+
+
+.form-textarea{
+	background: #e5e5e5;
+	border:none;
+	border-radius: 7px;
+	margin-top: 50px;
+	height: 250px;
+	padding: 20px !important;
+	outline: none;	
+    resize: none;
+	margin-bottom: 50px;
+}
+
+.form-btn{
+    border: none;
+	background: #ff3f40;
+	height: 70px;
+	border-radius: 7px;
+	color: white;
+	font-size: 16px;
+	font-weight:bold;
+	outline:none;
+}
+
+.form-btn:hover{
+	background:white  ;
+	color:#ff3f40;
+	border: 1px solid #ff3f40;
+	outline:none;
+}
+.contact-info-block{
+	height: 493px;
+	background: #2d2d2d;
+	margin-top: 360px;
+	color: #fff;
+}
+
+.contact-info-block h2{
+	margin-top: 145px;
+	margin-left: 60px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.contact-info-block p{
+	margin-left: 60px;
+	margin-top: 35px;
+}
+
+footer{
+	background: #2d2d2d;
+	height: 110px;
+	color: #b8b8b8;
+	padding: 45px;
+}
+
+.my-social-network img{
+	margin: 7px;
+	
+}
